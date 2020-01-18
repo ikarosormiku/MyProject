@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT       += multimediawidgets
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = VideoPalyer
@@ -25,10 +25,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        videvplayer.cpp
+        videvplayer.cpp \
+    myvideowidget.cpp
 
 HEADERS += \
-        videvplayer.h
+        videvplayer.h \
+    myvideowidget.h
 
 FORMS += \
         videvplayer.ui

@@ -1,7 +1,10 @@
-#ifndef VIDEVPLAYER_H
+﻿#ifndef VIDEVPLAYER_H
 #define VIDEVPLAYER_H
 
-#include <QWidget>
+#include <QMediaPlayer>
+#include <QtWidgets>
+#include <QFileDialog>
+#include <QDir>
 
 namespace Ui {
 class VidevPlayer;

@@ -1,20 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>VidevPlayer</class>
- <widget class="QWidget" name="VidevPlayer" >
-  <property name="geometry" >
+ <widget class="QWidget" name="VidevPlayer">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>800</width>
+    <height>600</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>VidevPlayer</string>
   </property>
+  <widget class="MyVideoWidget" name="VideoWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>600</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MyVideoWidget</class>
+   <extends>QWidget</extends>
+   <header>myvideowidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
